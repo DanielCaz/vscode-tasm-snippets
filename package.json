@@ -1,20 +1,25 @@
 {
-    "name": "assembly-8086-snippets",
-    "displayName": "Assembly 8086 Snippets (TASM)",
-    "description": "Simple snippets for TASM assembly",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.61.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "assembly",
-                "path": "./snippets/snippets.code-snippets"
-            }
-        ]
-    }
+  "name": "assembly-8086-snippets",
+  "displayName": "Assembly 8086 Snippets (TASM)",
+  "description": "Simple snippets for TASM assembly",
+  "publisher": "DaniDanDev",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielCaz/vscode-tasm-snippets"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "assembly",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }

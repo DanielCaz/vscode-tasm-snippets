@@ -1,0 +1,46 @@
+{
+  "Read character": {
+    "prefix": ["cread"],
+    "body": ["mov ah, 1", "int 21h"],
+    "description": "Read a character"
+  },
+  "Print character": {
+    "prefix": ["cprint"],
+    "body": ["mov ah, 2", "mov dl, ${1:65}", "int 21h"],
+    "description": "Print a character"
+  },
+  "Print string": {
+    "prefix": ["sprint"],
+    "body": ["mov ah, 2", "mov dx, offset ${1:var}", "int 21h"],
+    "description": "Print a predefined string"
+  },
+  "Loop": {
+    "prefix": ["loop"],
+    "body": [
+      "mov cx, ${1:10}",
+      "${2:label}:",
+      "\t;loop code here",
+      "\t$0",
+      "loop ${2:label}"
+    ],
+    "description": "Loop"
+  },
+  "Multiplication": {
+    "prefix": ["multiply"],
+    "body": [
+      "mov ${1|ax,al|}, ${2:4}",
+      "mov ${3|dx,dl|}, ${4:2}",
+      "mul ${3|dx,dl|}"
+    ],
+    "description": "Multiply two numbers"
+  },
+  "Division": {
+    "prefix": ["divide"],
+    "body": [
+      "mov ${1|ax,al|}, ${2:4}",
+      "mov ${3|dx,dl|}, ${4:2}",
+      "div ${3|dx,dl|}"
+    ],
+    "description": "Divide a number"
+  }
+}
