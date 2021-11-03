@@ -1,0 +1,20 @@
+{
+    "name": "assembly-8086-snippets",
+    "displayName": "Assembly 8086 Snippets (TASM)",
+    "description": "Simple snippets for TASM assembly",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "assembly",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
