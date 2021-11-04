@@ -3,7 +3,7 @@
   "displayName": "Assembly 8086 Snippets (TASM)",
   "description": "Simple snippets for TASM assembly",
   "publisher": "DaniDanDev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.61.0"
   },
