@@ -6,14 +6,12 @@ Simple snippets for TASM assembly.
 
 Snippets included:
 
-<ul>
-    <li>Reading a character [cread]</li>
-    <li>Printing a character [cprint]</li>
-    <li>Printing a string [sprint]</li>
-    <li>Loop [loop]</li>
-    <li>Multiplication [multiply]</li>
-    <li>Division [divide]</li>
-</ul>
+- Reading a character [cread]
+- Printing a character [cprint]
+- Printing a string [sprint]
+- Loop [loop]
+- Multiplication [multiply]
+- Division [divide]
 
 ## Requirements
 
@@ -21,10 +19,15 @@ VS Code doesn't natively support TASM assembly so an extension with language sup
 
 ## Release Notes
 
-### 1.0.0
+### 1.0.2
 
-Initial release
+- Updated snippets for dividing and multiplication
+- Added snippet for comparing
 
 ### 1.0.1
 
-Fixed snippet for printing a string
+- Fixed snippet for printing a string
+
+### 1.0.0
+
+- Initial release

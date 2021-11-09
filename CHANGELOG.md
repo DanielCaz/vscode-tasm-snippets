@@ -1,9 +1,14 @@
 # Change Log
 
-## [1.0.0]
+## [1.0.2]
 
-- Initial release
+- Updated snippets for dividing and multiplication
+- Added snippet for comparing
 
 ## [1.0.1]
 
 - Fixed snippet for printing a string
+
+## [1.0.0]
+
+- Initial release

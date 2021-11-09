@@ -33,8 +33,8 @@
     "prefix": ["multiply"],
     "body": [
       "mov ${1|ax,al|}, ${2:firstnumber}",
-      "mov ${3|dx,dl|}, ${4:othernumber}",
-      "mul ${3|dx,dl|}"
+      "mov ${3|bx,bl,cx,cl,dx,dl|}, ${4:othernumber}",
+      "mul ${3|bx,bl,cx,cl,dx,dl|}"
     ],
     "description": "Multiply two numbers"
   },
@@ -42,9 +42,25 @@
     "prefix": ["divide"],
     "body": [
       "mov ax, ${1:dividend}",
-      "mov ${2|dx,dl|}, ${3:divisor}",
-      "div ${2|dx,dl|}"
+      "mov ${2|bx,bl,cx,cl,dx,dl|}, ${3:divisor}",
+      "div ${2|bx,bl,cx,cl,dx,dl|}"
     ],
     "description": "Divide a number"
+  },
+  "Compare with label": {
+    "prefix": ["compare"],
+    "body": [
+      "cmp ${1|ax,al,bx,bl,cx,cl,dx,dl|}, ${2:other}",
+      "${3|jmp,ja,jb,jl,jle,jg,jge|} ${4:label}",
+      "${4:label}:",
+      "\t$0"
+    ]
+  },
+  "Compare without label": {
+    "prefix": ["compare_"],
+    "body": [
+      "cmp ${1|ax,al,bx,bl,cx,cl,dx,dl|}, ${2:other}",
+      "${3|jmp,ja,jb,jl,jle,jg,jge|} ${4:label}"
+    ]
   }
 }
