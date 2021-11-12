@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.3]
+
+- Fixed readme
+
 ## [1.0.2]
 
 - Updated snippets for dividing and multiplication

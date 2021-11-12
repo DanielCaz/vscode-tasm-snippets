@@ -12,12 +12,17 @@ Snippets included:
 - Loop [loop]
 - Multiplication [multiply]
 - Division [divide]
+- Comparing [compare]
 
 ## Requirements
 
 VS Code doesn't natively support TASM assembly so an extension with language support for TASM is required for VS Code to recongnize <b>.asm</b> files.
 
 ## Release Notes
+
+### 1.0.3
+
+- Fixed readme
 
 ### 1.0.2
 
